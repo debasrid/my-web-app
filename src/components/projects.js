@@ -13,11 +13,11 @@ class Projects extends Component {
                 <div className="project-grid">
                     {/*Project#2*/}
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png) center/cover' }}>html2</CardTitle>
-                        <CardText>description</CardText>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://my-web-app.s3.eu-central-1.amazonaws.com/wij-perspectief-screenshot.png) center/cover' }}>Wij-perspectief</CardTitle>
+                        <CardText>Wij Perspectief is a website about the inclusion of migrants and about sustainability and offers companies organizations evidence-based innovations to realize an inclusive and sustainable society</CardText>
                         <CardActions border>
-                            <Button colored>gitjub</Button>
-                            <Button colored>Demo</Button>
+                            <Button colored href="https://github.com/debasrid" target="_blank">Github</Button>
+                            <Button colored href="http://www.wij-perspectief.nl/" target="_blank">Demo</Button>
                         </CardActions>
                         <CardMenu style={{ color: '#ffa' }}>
                             <IconButton name="share" />
@@ -26,24 +26,11 @@ class Projects extends Component {
 
                      {/*Project#2*/}
                      <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png) center/cover' }}>html2</CardTitle>
-                        <CardText>description</CardText>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://my-web-app.s3.eu-central-1.amazonaws.com/financefit-screenshot.png) center/cover' }}>Financefit</CardTitle>
+                        <CardText>FinanceFit is an application for keeping track of daily spendings and calorie consumption of users directly from the shopping bills. You just need to upload a photo of the bill, or you can add the purchase details manually.</CardText>
                         <CardActions border>
-                            <Button colored>gitjub</Button>
-                            <Button colored>Demo</Button>
-                        </CardActions>
-                        <CardMenu style={{ color: '#ffa' }}>
-                            <IconButton name="share" />
-                        </CardMenu>
-                    </Card>
-
-                     {/*Project#3*/}
-                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png) center/cover' }}>html3</CardTitle>
-                        <CardText>description</CardText>
-                        <CardActions border>
-                            <Button colored>gitjub</Button>
-                            <Button colored>Demo</Button>
+                            <Button colored href="https://github.com/debasrid/financefit" target="_blank">Github</Button>
+                            <Button colored href="https://financefit.herokuapp.com/" target="_blank">Demo</Button>
                         </CardActions>
                         <CardMenu style={{ color: '#ffa' }}>
                             <IconButton name="share" />
@@ -54,12 +41,52 @@ class Projects extends Component {
         }
         else if (this.state.activeTab === 1) {
             return (
-                <div><h1> HTML</h1></div>
+                <div className="project-grid">
+                    {/*Project#2*/}
+                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://my-web-app.s3.eu-central-1.amazonaws.com/wij-perspectief-screenshot.png) center/cover' }}>Wij-perspectief</CardTitle>
+                        <CardText>Wij Perspectief is a website about the inclusion of migrants and about sustainability and offers companies organizations evidence-based innovations to realize an inclusive and sustainable society</CardText>
+                        <CardActions border>
+                            <Button colored href="https://github.com/debasrid" target="_blank">Github</Button>
+                            <Button colored href="http://www.wij-perspectief.nl/" target="_blank">Demo</Button>
+                        </CardActions>
+                        <CardMenu style={{ color: '#ffa' }}>
+                            <IconButton name="share" />
+                        </CardMenu>
+                    </Card>
+
+                     {/*Project#2*/}
+                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://my-web-app.s3.eu-central-1.amazonaws.com/fishomania-screenshot.png) center/cover' }}>Fish-o-mania</CardTitle>
+                        <CardText>Fish-o-mania is a fun game to catch fish using a fishing hook. Beware, catching the wrong type will reduce your point! </CardText>
+                        <CardActions border>
+                            <Button colored href="https://github.com/debasrid/fishing-project" target="_blank">Github</Button>
+                            <Button colored href="https://fish-o-mania.herokuapp.com/" target="_blank">Demo</Button>
+                        </CardActions>
+                        <CardMenu style={{ color: '#ffa' }}>
+                            <IconButton name="share" />
+                        </CardMenu>
+                    </Card>
+                </div>
             )
         }
         else if (this.state.activeTab === 2) {
             return (
-                <div><h1> react</h1></div>
+                <div className="project-grid">
+
+                     {/*Project#1*/}
+                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://my-web-app.s3.eu-central-1.amazonaws.com/financefit-screenshot.png) center/cover' }}>Financefit</CardTitle>
+                        <CardText>FinanceFit is an application for keeping track of daily spendings and calorie consumption of users directly from the shopping bills. You just need to upload a photo of the bill, or you can add the purchase details manually.</CardText>
+                        <CardActions border>
+                            <Button colored href="https://github.com/debasrid/financefit" target="_blank">Github</Button>
+                            <Button colored href="https://financefit.herokuapp.com/" target="_blank">Demo</Button>
+                        </CardActions>
+                        <CardMenu style={{ color: '#ffa' }}>
+                            <IconButton name="share" />
+                        </CardMenu>
+                    </Card>
+                </div>
             )
         }
     }
